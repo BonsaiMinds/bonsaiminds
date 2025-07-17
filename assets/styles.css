@@ -16,6 +16,8 @@ header {
   max-width: 100px;
   height: auto;
   margin-bottom: 1rem;
+  display: block;
+  margin:0 auto 1rem;
 }
 
 h1 {
