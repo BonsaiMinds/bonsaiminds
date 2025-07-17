@@ -1,131 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BonsaiMinds | Clarity for Life’s Challenges</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BonsaiMinds</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body class="bg-blue-50 text-gray-800 font-sans">
-  <!-- Language Selector -->
-  <div class="bg-green-100 p-2 text-right pr-6">
-    <label for="language" class="mr-2 font-medium text-green-800">Language:</label>
-    <select id="language" class="p-1 rounded border">
-      <option value="en">English</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="ar">العربية</option>
-      <option value="zh">中文</option>
-      <option value="sw">Kiswahili</option>
-      <option value="ht">Haitian Creole (Beta)</option>
-      <option value="qu">K’iche’ (Beta)</option>
-      <option value="am">Amharic (Beta)</option>
-      <option value="so">Somali (Beta)</option>
-      <option value="nv">Navajo (Beta)</option>
-    </select>
-  </div>
-
-  <!-- Header -->
-  <header class="bg-green-200 shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-green-800">
-        <span class="inline-block mr-2">🌿</span>BonsaiMinds
-      </h1>
-      <nav class="space-x-4">
-        <a href="#" class="text-green-900 hover:underline">Home</a>
-        <a href="#features" class="text-green-900 hover:underline">Features</a>
-        <a href="#decoder" class="text-green-900 hover:underline">Decoder</a>
-        <a href="#resources" class="text-green-900 hover:underline">Resources</a>
-        <a href="#contact" class="text-green-900 hover:underline">Contact</a>
-      </nav>
-    </div>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="BonsaiMinds Logo" />
+    <h1>Welcome to BonsaiMinds</h1>
   </header>
-
-  <!-- Hero -->
-  <main class="max-w-4xl mx-auto py-10 px-4 text-center">
-    <h2 class="text-4xl font-semibold mb-4 text-green-900">Welcome to BonsaiMinds</h2>
-    <p class="text-lg text-gray-700 mb-8">
-      Your guide to mastering everyday challenges — one leaf at a time.
-    </p>
-    <a href="#decoder" class="bg-green-600 text-white px-6 py-3 rounded-xl hover:bg-green-700 transition">
-      Try Bills & Letters Decoder
-    </a>
+  <main>
+    <video controls>
+      <source src="assets/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>This is the home of free life tools, AI support, and more.</p>
   </main>
-
-  <!-- Features -->
-  <section id="features" class="bg-white py-10 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold text-green-800 mb-6">Core Features</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-4 border rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-green-700 mb-2">Bills & Letters Decoder</h4>
-          <p class="text-sm">Upload or scan confusing documents to get clear summaries in plain language.</p>
-        </div>
-        <div class="p-4 border rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-green-700 mb-2">Step-by-Step Guidance</h4>
-          <p class="text-sm">Understand what to do next when facing eviction, collections, or legal threats.</p>
-        </div>
-        <div class="p-4 border rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-green-700 mb-2">Multilingual + Dialect Support</h4>
-          <p class="text-sm">Available in English, Spanish, and more languages & dialects for global inclusion.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Decoder -->
-  <section id="decoder" class="bg-white py-10 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold text-green-800 mb-4">Bills & Letters Decoder</h3>
-      <p class="text-gray-700 mb-6">Upload a document and we'll help you understand what it means.</p>
-      <form id="decodeForm" class="bg-blue-50 p-6 rounded-xl shadow-md space-y-4">
-        <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png" class="block mx-auto" required />
-        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-          Analyze Document
-        </button>
-      </form>
-      <div id="resultArea" class="mt-6 text-left text-sm bg-gray-100 p-4 rounded-xl hidden">
-        <h4 class="text-green-800 font-bold mb-2">AI Summary:</h4>
-        <p id="aiResponse">Processing...</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Feedback/Testimony -->
-  <section id="feedback" class="bg-green-50 py-10 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold text-green-800 mb-4">Share Your Story</h3>
-      <p class="text-sm mb-4">Have we helped you? Share your experience with BonsaiMinds.</p>
-      <textarea rows="4" placeholder="Write your testimony here..." class="w-full max-w-xl p-3 border rounded-lg"></textarea>
-      <br />
-      <button class="mt-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Submit Story</button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact" class="bg-green-100 py-6 mt-12 text-center">
-    <p class="text-sm text-green-900">© 2025 BonsaiMinds. Empowering growth, one step at a time.</p>
-    <div class="max-w-3xl mx-auto text-xs text-gray-600 px-4 mt-4">
-      <p>
-        <strong>Disclaimer:</strong> BonsaiMinds is not a law firm, financial advisor, or credit repair organization. The information and tools provided are for general guidance only and should not be considered legal or financial advice. For help with legal, credit, or debt-related matters, please consult with a qualified professional.
-      </p>
-    </div>
-  </footer>
-
-  <!-- Script -->
-  <script>
-    const form = document.getElementById('decodeForm');
-    const resultArea = document.getElementById('resultArea');
-    const aiResponse = document.getElementById('aiResponse');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      resultArea.classList.remove('hidden');
-      aiResponse.textContent = 'Analyzing...';
-      setTimeout(() => {
-        aiResponse.textContent = "This appears to be a utility bill with a past due amount. Please contact the provider for assistance options.";
-      }, 2500);
-    });
-  </script>
 </body>
 </html>
